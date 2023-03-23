@@ -1,0 +1,407 @@
+# This file is distributed under the same license as the Django package.
+#
+# Translators:
+# Anvar Ulugov <wasatiyatm@gmail.com>, 2020
+# Bedilbek Khamidov <bedilbek@gmail.com>, 2019
+# Claude Paroz <claude@2xlibre.net>, 2019
+# Shukrullo Turgunov <shukrullo@umail.uz>, 2021
+# Sukhrobbek Ismatov <isukhrobbek@gmail.com>, 2019
+# Yet Sum <sotuvchicom@gmail.com>, 2019
+msgid ""
+msgstr ""
+"Project-Id-Version: django\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-11 12:24+0500\n"
+"PO-Revision-Date: 2021-03-23 11:13+0000\n"
+"Last-Translator: Shukrullo Turgunov <shukrullo@umail.uz>\n"
+"Language-Team: Uzbek (http://www.transifex.com/django/django/language/uz/)\n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: config/settings.py:178
+msgid "Uzbek"
+msgstr ""
+
+#: config/settings.py:179
+msgid "uz_Cyrl"
+msgstr ""
+
+#: config/settings.py:180
+msgid "Russian"
+msgstr ""
+
+#: config/settings.py:181
+msgid "English"
+msgstr ""
+
+#: templates/admin/about/submit_line.html:15
+#: templates/admin/submit_line.html:15
+msgid "Save"
+msgstr "Saqlash"
+
+#: templates/admin/about/submit_line.html:21
+#: templates/admin/submit_line.html:21
+msgid "Delete"
+msgstr "O'chirish"
+
+#: templates/admin/about/submit_line.html:26
+#: templates/admin/submit_line.html:26
+msgid "Save as new"
+msgstr ""
+
+#: templates/admin/about/submit_line.html:36
+#: templates/admin/submit_line.html:36
+msgid "Save and view"
+msgstr ""
+
+#: templates/admin/base.html:131
+msgid "Search"
+msgstr "Izlash"
+
+#: templates/admin/base.html:191
+msgid "Account"
+msgstr ""
+
+#: templates/admin/base.html:194
+#: templates/registration/password_change_done.html:6
+#: templates/registration/password_change_form.html:9
+#: templates/registration/password_change_form.html:103
+msgid "Change password"
+msgstr "Parolni o'zgartirish"
+
+#: templates/admin/base.html:198
+#: templates/registration/password_change_done.html:7
+#: templates/registration/password_change_form.html:9
+msgid "Log out"
+msgstr "Chiqish"
+
+#: templates/admin/base.html:209
+msgid "See Profile"
+msgstr ""
+
+#: templates/admin/base.html:252 templates/admin/index.html:7
+#: templates/admin/index.html:12
+msgid "Dashboard"
+msgstr "olma"
+
+#: templates/admin/base.html:366
+msgid "Jazzmin version"
+msgstr ""
+
+#: templates/admin/base.html:369
+msgid "Copyright"
+msgstr ""
+
+#: templates/admin/base.html:369
+msgid "All rights reserved."
+msgstr ""
+
+#: templates/admin/base.html:385
+msgid "UI Configuration"
+msgstr ""
+
+#: templates/admin/base.html:389
+msgid "Copy this info your settings file to persist these UI changes"
+msgstr ""
+
+#: templates/admin/base.html:393
+msgid "Close"
+msgstr ""
+
+#: templates/admin/change_form.html:23
+#: templates/admin/delete_confirmation.html:15
+#: templates/admin/delete_selected_confirmation.html:15
+#: templates/admin/index.html:11 templates/admin/solo/change_form.html:7
+#: templates/admin/solo/object_history.html:6
+#: templates/registration/password_change_done.html:11
+#: templates/registration/password_change_form.html:14
+msgid "Home"
+msgstr ""
+
+#: templates/admin/change_form.html:34
+#, python-format
+msgid "Add %(name)s"
+msgstr ""
+
+#: templates/admin/change_form.html:55
+#: templates/registration/password_change_form.html:38
+msgid "Please correct the error below."
+msgstr ""
+
+#: templates/admin/change_form.html:57
+#: templates/registration/password_change_form.html:38
+msgid "Please correct the errors below."
+msgstr ""
+
+#: templates/admin/delete_confirmation.html:38
+#, python-format
+msgid ""
+"%(object_name)s '%(escaped_object)s'ni o'chirish tegishli ob'ektlarni "
+"o'chirishga olib keladi, lekin sizda quyidagi turdagi ob'ektlarni "
+"o'chirishga ruxsat yo'q:"
+msgstr ""
+
+#: templates/admin/delete_confirmation.html:45
+#, python-format
+msgid ""
+"%(object_name)s '%(escaped_object)s'ni o'chirish quyidagi ob'ektlarni "
+"o'chirishni talab qiladi:"
+msgstr ""
+
+#: templates/admin/delete_confirmation.html:52
+#, python-format
+msgid ""
+"Haqiqatan ham %(object_name)s \"%(escaped_object)s\" faylini o‘chirib "
+"tashlamoqchimisiz? Quyidagi barcha elementlar ham oʻchirib tashlanadi:"
+msgstr ""
+
+#: templates/admin/delete_selected_confirmation.html:37
+#, python-format
+msgid ""
+"Tanlangan %(objects_name)s ni oʻchirish quyidagi obʼyektlarni oʻchirishga "
+"olib keladi, lekin sizda quyidagi turdagi obyektlarni oʻchirishga ruxsat "
+"yoʻq:"
+msgstr ""
+
+#: templates/admin/delete_selected_confirmation.html:44
+#, python-format
+msgid ""
+"Tanlangan %(objects_name)s ni oʻchirish quyidagi  obyektlarni oʻchirishni "
+"talab qiladi:"
+msgstr ""
+
+#: templates/admin/delete_selected_confirmation.html:51
+#, python-format
+msgid ""
+"Haqiqatan ham tanlangan %(objects_name)s ni oʻchirib tashlamoqchimisiz? "
+"Quyidagi barcha ob'ektlar va ularga tegishli elementlar o'chiriladi:"
+msgstr ""
+
+#: templates/admin/delete_selected_confirmation.html:54
+#: templates/admin/filer/delete_selected_files_confirmation.html:41
+msgid "Objects"
+msgstr ""
+
+#: templates/admin/index.html:42
+#: templates/admin/order/order/change_list_object_tools.html:9
+msgid "Add"
+msgstr "Qo'shish"
+
+#: templates/admin/index.html:46
+msgid "View"
+msgstr "Ko'rish"
+
+#: templates/admin/index.html:48
+msgid "Go"
+msgstr ""
+
+#: templates/admin/index.html:48
+msgid "Change"
+msgstr "O'zgartirish"
+
+#: templates/admin/index.html:73
+msgid "Recent actions"
+msgstr "So'ngi harakatlar11111111"
+
+#: templates/admin/index.html:77
+msgid "None available"
+msgstr "yaroqsiz"
+
+#: templates/admin/index.html:91
+#, python-format
+msgid "%(timesince)s ago"
+msgstr ""
+
+#: templates/admin/login.html:14 templates/registration/logged_out.html:15
+msgid "Log in again"
+msgstr ""
+
+#: templates/admin/order/order/submit_line.html:9
+#, fuzzy
+#| msgid "Action:"
+msgid "Actions"
+msgstr "Harakat:"
+
+#: templates/registration/password_change_done.html:5
+#: templates/registration/password_change_form.html:8
+msgid "Documentation"
+msgstr "Qo'llanma"
+
+#: templates/registration/password_change_done.html:12
+#: templates/registration/password_change_form.html:15
+msgid "Password change"
+msgstr ""
+
+#: templates/registration/password_change_done.html:21
+msgid "Your password was changed."
+msgstr ""
+
+#: templates/registration/password_change_form.html:28
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+
+#~ msgid "Delete selected %(verbose_name_plural)s"
+#~ msgstr "%(verbose_name_plural)s tanlanganlarni o'chirish"
+
+#~ msgid "Successfully deleted %(count)d %(items)s."
+#~ msgstr "%(count)d%(items)s muvaffaqiyatli o'chirildi."
+
+#~ msgid "Cannot delete %(name)s"
+#~ msgstr "%(name)s o'chirib bo'lmadi"
+
+#~ msgid "Are you sure?"
+#~ msgstr "Ishonchingiz komilmi?"
+
+#~ msgid "Administration"
+#~ msgstr "Administratsiya"
+
+#~ msgid "All"
+#~ msgstr "Hammasi"
+
+#~ msgid "Yes"
+#~ msgstr "Ha"
+
+#~ msgid "No"
+#~ msgstr "Yo'q"
+
+#~ msgid "Unknown"
+#~ msgstr "Noma'lum"
+
+#~ msgid "Any date"
+#~ msgstr "Istalgan kun"
+
+#~ msgid "Today"
+#~ msgstr "Bugun"
+
+#~ msgid "Past 7 days"
+#~ msgstr "O'tgan 7 kun"
+
+#~ msgid "This month"
+#~ msgstr "Shu oyda"
+
+#~ msgid "This year"
+#~ msgstr "Shu yilda"
+
+#~ msgid "No date"
+#~ msgstr "Sanasi yo'q"
+
+#~ msgid "Has date"
+#~ msgstr "Sanasi bor"
+
+#~ msgid "Empty"
+#~ msgstr "Bo'sh"
+
+#~ msgid "Not empty"
+#~ msgstr "Bo'sh emas"
+
+#~ msgid ""
+#~ "Please enter the correct %(username)s and password for a staff account. "
+#~ "Note that both fields may be case-sensitive."
+#~ msgstr ""
+#~ "Xodimlar akkaunti uchun to'g'ri %(username)s va parolni kiriting. E'tibor "
+#~ "bering, har ikkala maydon ham harf katta-kichikligini hisobga olishi "
+#~ "mumkin."
+
+#~ msgid "Add another %(verbose_name)s"
+#~ msgstr "Boshqa%(verbose_name)s qo‘shish"
+
+#~ msgid "Remove"
+#~ msgstr "Olib tashlash"
+
+#~ msgid "Addition"
+#~ msgstr " Qo'shish"
+
+#~ msgid "Deletion"
+#~ msgstr "O'chirish"
+
+#~ msgid "action time"
+#~ msgstr "harakat vaqti"
+
+#~ msgid "user"
+#~ msgstr "foydalanuvchi"
+
+#~ msgid "content type"
+#~ msgstr "tarkib turi"
+
+#~ msgid "object id"
+#~ msgstr "obyekt identifikatori"
+
+#~ msgid "object repr"
+#~ msgstr "obyekt taqdimi"
+
+#~ msgid "action flag"
+#~ msgstr "harakat bayrog'i"
+
+#~ msgid "change message"
+#~ msgstr "xabarni o'zgartirish"
+
+#~ msgid "Added “%(object)s”."
+#~ msgstr "\"%(object)s\" qo'shildi."
+
+#~ msgid "Changed “%(object)s” — %(changes)s"
+#~ msgstr "%(object)s dan %(changes)sga o'zgartirildi."
+
+#~ msgid "Deleted “%(object)s.”"
+#~ msgstr "\"%(object)s\" o'chirildi."
+
+#~ msgid "None"
+#~ msgstr "Bo'sh"
+
+#~ msgid "The {name} “{obj}” was changed successfully."
+#~ msgstr "{name} \"{obj}\" muvaffaqiyatli o'zgartirildi."
+
+#~ msgid "The %(name)s “%(obj)s” was deleted successfully."
+#~ msgstr "%(name)s%(obj)smuvaffaqiyatli o'chirildi"
+
+#~ msgid "Add %s"
+#~ msgstr "Qo'shish %s"
+
+#~ msgid "Change %s"
+#~ msgstr "O'zgartirish %s"
+
+#~ msgid "View %s"
+#~ msgstr "Ko'rish %s"
+
+#~ msgid "Server error"
+#~ msgstr "Server xatoligi"
+
+#~ msgid "Server error (500)"
+#~ msgstr "Server xatoligi (500)"
+
+#~ msgid "Server Error <em>(500)</em>"
+#~ msgstr "Server xatoligi <em>(500)</em>"
+
+#~ msgid "Run the selected action"
+#~ msgstr "Tanlangan faoliyatni ishga tushirish"
+
+#~ msgid "Enter a username and password."
+#~ msgstr "Username va parolni kiritish"
+
+#~ msgid "Welcome,"
+#~ msgstr "Xush kelibsiz,"
+
+#~ msgid "View site"
+#~ msgstr "Saytni ko'rish"
+
+#~ msgid "View on site"
+#~ msgstr "Saytda ko'rish"
+
+#~ msgid "Filter"
+#~ msgstr "Saralash"
+
+#~ msgid "Remove from sorting"
+#~ msgstr "Tartiblashdan chiqarish"
+
+#~ msgid "Delete?"
+#~ msgstr "O'chirasizmi?"
+
+#~ msgid "Summary"
+#~ msgstr "Xulosa"
+
+#~ msgid "My actions"
+#~ msgstr "Mening harakatlarim"

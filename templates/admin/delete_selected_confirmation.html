@@ -1,0 +1,83 @@
+{% extends "admin/base_site.html" %}
+{% load i18n l10n admin_urls static jazzmin %}
+{% get_jazzmin_ui_tweaks as jazzmin_ui %}
+
+{% block extrahead %}
+    {{ block.super }}
+    {{ media }}
+    <script type="text/javascript" src="{% static 'admin/js/cancel.js' %}"></script>
+{% endblock %}
+
+{% block bodyclass %}{{ block.super }} app-{{ opts.app_label }} model-{{ opts.model_name }} delete-confirmation delete-selected-confirmation{% endblock %}
+
+{% block breadcrumbs %}
+<ol class="breadcrumb float-sm-right">
+    <li class="breadcrumb-item"><a href="{% url 'admin:index' %}"><i class="fa fa-tachometer-alt"></i> Бош саҳифа</a></li>
+    <li class="breadcrumb-item"><a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a></li>
+    <li class="breadcrumb-item"><a href="{% url opts|admin_urlname:'changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a></li>
+    <li class="breadcrumb-item active">Бир нечта объектларни ўчириш</li>
+</ol>
+{% endblock %}
+
+{% block content_title %} Бир нечта объектларни ўчириш {% endblock %}
+
+{% block content %}
+
+<div class="col-12">
+    <div class="card card-danger card-outline">
+        <div class="card-header with-border">
+            <h4 class="card-title">
+                Бир нечта объектларни ўчириш
+            </h4>
+        </div>
+
+        <div class="card-body">
+            <div id="content-main">
+                {% if perms_lacking %}
+                    <p>{% blocktrans %}Танланган {{ objects_name }} ни оʻчириш қуйидаги обʼектларни оʻчиришга олиб келади, лекин сизда қуйидаги турдаги обектларни оʻчиришга рухсат ёқ:{% endblocktrans %}</p>
+                    <ol>
+                        {% for obj in perms_lacking %}
+                        <li>{{ obj }}</li>
+                        {% endfor %}
+                    </ol>
+                {% elif protected %}
+                    <p>{% blocktrans %}Танланган {{ objects_name }} ни оʻчириш қуйидаги  обектларни оʻчиришни талаб қилади:{% endblocktrans %}</p>
+                    <ol>
+                        {% for obj in protected %}
+                        <li>{{ obj }}</li>
+                        {% endfor %}
+                    </ol>
+                {% else %}
+                    <p>{% blocktrans %}Ҳақиқатан ҳам танланган {{ objects_name }} ни оʻчириб ташламоқчимисиз? Қуйидаги барча объектлар ва уларга тегишли элементлар ўчирилади:{% endblocktrans %}</p>
+                    <div class="row">
+                        <div class="col-12 col-sm-9">
+                            <h4>Обектлар</h4>
+                            {% for deletable_object in deletable_objects %}
+                                <ol>{{ deletable_object|unordered_list }}</ol>
+                            {% endfor %}
+                        </div>
+                        <div class="col-12 col-sm-3">
+                            {% include "admin/includes/object_delete_summary.html" %}
+                            <hr />
+                            <form method="post">
+                                {% csrf_token %}
+                                {% for obj in queryset %}
+                                    <input type="hidden" name="{{ action_checkbox_name }}" value="{{ obj.pk|unlocalize }}">
+                                {% endfor %}
+                                <input type="hidden" name="action" value="Танланганларни ўчириш">
+                                <input type="hidden" name="post" value="Ҳа">
+                                <div class="form-group">
+                                    <input type="submit" class="btn {{ jazzmin_ui.button_classes.danger }} form-control" value="Ҳа">
+                                </div>
+                                <div class="form-group">
+                                    <a href="#" class="btn {{ jazzmin_ui.button_classes.danger }} cancel-link form-control">Ёқ, орқага қайтиш</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
